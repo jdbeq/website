@@ -1,1 +1,40 @@
+header {
+	padding: 1.2em;
+	background: gold;
+}
 
+footer {
+	padding: 1.2em;
+	background: gold;
+}
+
+article {
+	padding: 1.2em;
+	background: gold;
+}
+
+nav {
+	padding: 1.2em;
+	background: gold;
+}
+
+div {
+	padding: 1.2em;
+	background: gold;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 1000;
+}
+
+a:active {
+  text-decoration: none;
+}
