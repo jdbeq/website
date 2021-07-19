@@ -1,40 +1,92 @@
-header {
+body { 
+	display: grid;
+	grid-template-areas: 
+		"header header header"
+		"nav article ads"
+		"footer footer footer";
+	grid-template-rows: 80px 1fr 70px;  
+	grid-template-columns: 20% 1fr 15%;
+	height: 100vh;
+	margin: 0;
+}
+
+header, footer, article, nav, div {
 	padding: 1.2em;
 	background: gold;
 }
 
-footer {
-	padding: 1.2em;
-	background: gold;
+#siteHeader {
+	grid-area: header;
 }
 
-article {
-	padding: 1.2em;
-	background: gold;
+#siteFooter {
+	grid-area: footer;
 }
 
-nav {
-	padding: 1.2em;
-	background: gold;
+#siteMain { 
+	grid-area: article;      
 }
 
-div {
-	padding: 1.2em;
-	background: gold;
+#siteMain { 
+	grid-area: nav; 
 }
 
-a:link {
-  text-decoration: none;
+#siteAds { 
+	grid-area: ads; 
 }
 
-a:visited {
-  text-decoration: none;
+label {
+text-align: right;
 }
 
-a:hover {
-  font-weight: 1000;
+.left {
+	width:30%
+	float: left;
+	text-justify:right;
 }
 
-a:active {
-  text-decoration: none;
+.right {
+	width:65%
+	float: left;
+	margin-left: 10px;
+}
+ 
+div.dropdown-vert {
+	position:relative;
+	width:200px;
+}
+	 
+div.dropdown-vert ul {
+    list-style: none;
+    background-color:gold;
+    font-size:20px;
+}
+	 
+div.dropdown-vert li {
+    position:relative;
+    border:2px solid black;
+}
+	 
+div.dropdown-vert a { 
+    display:block;
+    text-decoration:none;
+    padding:10px;
+    color:black;
+}
+	
+div.dropdown-vert li:hover > a {
+    background:black;
+    color:lightgreen;
+}
+	 
+div.dropdown-vert ul ul {
+    position:absolute;
+    top:0;
+    width:100%;
+    visibility:hidden;
+}
+	 
+div.dropdown-vert li:hover > ul {
+    left:100%;
+    visibility:visible;
 }
