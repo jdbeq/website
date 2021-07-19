@@ -13,14 +13,14 @@
 	<article id="siteMain">
 	<form action="/action_page.php">
 	<label for="title">Title:</label>
-	<input type="text" id="ptitle" name="ptitle" onmouseover="statusUpdate();"><br><br>
+	<input type="text" id="ptitle" name="ptitle" onmouseover="infoHover(1);" onmouseout="infoHover(4);"><br><br>
 	<label for="msgBody">Message:</label>
-	<input type="text" id="pbody"  name="pbody" onmouseover="statusUpdate();"><br><br>
-	<input type="button" value="Submit">
-	<input type="button" value="Clear">
+	<input type="text" id="pbody"  name="pbody" onmouseover="infoHover(2);" onmouseout="infoHover(4);"><br><br>
+	<input type="button" value="Submit" onclick="validatePost()">
+	<input type="button" value="Clear" onclick="clearForm()">
 	</form>
 
-	<textarea></textarea>
+	<textarea id="status" class="status"></textarea>
   </div>
   </article>
   <nav id="siteMain">
