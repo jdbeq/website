@@ -1,13 +1,18 @@
+
 body { 
 	display: grid;
 	grid-template-areas: 
 		"header header header"
 		"nav article ads"
 		"footer footer footer";
-	grid-template-rows: 80px 1fr 70px;  
+	grid-template-rows: 125px 1fr 70px;  
 	grid-template-columns: 20% 1fr 15%;
 	height: 100vh;
 	margin: 0;
+}
+
+img {
+	float:right;
 }
 
 header, footer, article, nav, div {
@@ -23,7 +28,7 @@ header, footer, article, nav, div {
 	grid-area: footer;
 }
 
-#siteMain { 
+#siteMain {
 	grid-area: article;      
 }
 
@@ -71,12 +76,12 @@ div.dropdown-vert a {
     display:block;
     text-decoration:none;
     padding:10px;
-    color:black;
+    color:white;
 }
 	
 div.dropdown-vert li:hover > a {
-    background:black;
-    color:lightgreen;
+    background:white;
+    color:black;
 }
 	 
 div.dropdown-vert ul ul {
